@@ -1,1 +1,18 @@
-
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Clock</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="manifest" href="manifest.json"/>
+		<script>
+			if (typeof navigator.serviceWorker !== 'undefined') {
+				navigator.serviceWorker.register('sw.js')
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="canvas" style="position:absolute; left:0px; top:0px;"></canvas>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>
